@@ -16,7 +16,7 @@
 title: laz.dev
 email:
 description: >- # Metadata for Google search results, etc.
-twitter_username: lawrence_laz
+# twitter_username: lawrence_laz
 github_username: lawrence-laz
 minimal_mistakes_skin: default
 search: true
@@ -64,18 +64,18 @@ author:
   avatar : "/assets/images/bio-photo.png"
   bio    : "..."
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/lawrence_laz"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/lawrence_laz"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lawrence-laz"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/lawrence_laz"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/lawrence_laz"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lawrence-laz"
