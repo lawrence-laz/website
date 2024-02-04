@@ -1,0 +1,228 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan LT</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .header-background {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-image: url("assets/images/food-background.jpeg");
+            background-size: cover;
+            background-position: -10%;
+            width: 100%;
+            min-height: 37%;
+            z-index: -2;
+        }
+
+        .body-background {
+            position: absolute;
+            top: 37%;
+            left: 0px;
+            background-image: url("assets/images/triangle-pattern.jpg");
+            opacity: .05;
+            background-size: cover;
+            background-position: -10%;
+            width: 100%;
+            min-height: 63%;
+            z-index: -2;
+        }
+
+        .header-background-overlay {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #0E4818;
+            opacity: .5;
+            width: 100%;
+            min-height: 37%;
+            z-index: -1;
+        }
+
+        .part-one {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            margin-top: 37px;
+        }
+
+        .part-one-text {
+            flex-direction: column;
+            align-content: center;
+            color: white;
+            text-shadow: 0px 0px 25px rgba(0, 0, 0, 1), 0px 0px 15px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+            font-family: Arial, Helvetica, sans-serif;
+            display: table;
+            margin-left: 10px;
+        }
+
+        .part-one-text h1 {
+            width: -moz-fit-content;
+            width: fit-content;
+        }
+
+        .part-one-text p {
+            width: -moz-fit-content;
+            width: fit-content;
+            display: table;
+            margin: 0px;
+            padding-bottom: 10px;
+        }
+
+        .part-two {
+            display: flex;
+            flex-direction: row;
+            /* flex: 1; */
+            height: 100%;
+            justify-content: center;
+        }
+
+        .screenshot {
+            max-height: 512px;
+            margin: 17px;
+            box-shadow: 0 14px 18px rgba(0, 0, 0, 0.5);
+        }
+
+        /* #logo { */
+        /*     width: 100%; */
+        /* } */
+
+        .icon {
+            margin: 8px;
+            background: #33CC00;
+            background-image: url(http://www.cyberdesignz.com/blog/wp-content/uploads/2009/12/CSS.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            width: 128px;
+            height: 128px;
+            border-radius: 19px;
+            overflow: hidden;
+            border: solid 2px #1E8828;
+            position: relative;
+            -webkit-box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, .2);
+            -moz-box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, .2);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .icon img {
+            width: 100%;
+        }
+
+        .icon .gloss {
+            background: #FBFAF7;
+            opacity: .1;
+            height: 79px;
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            z-index: 5;
+            -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, .3);
+            -moz-box-shadow: 0px 0px 10px rgba(255, 255, 255, .3);
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, .3);
+            border-bottom-right-radius: 170px 25px;
+            border-bottom-left-radius: 170px 25px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            position: absolute;
+            bottom: 50px;
+        }
+
+        .perspective {
+            position: relative;
+            /* width: 100px; */
+            /* height: 300px; */
+            transform-style: preserve-3d;
+            transition: all 2500ms ease-in;
+            /* transform: rotateY(20deg) rotateX(60deg) rotateZ(-10deg); */
+            transform: rotateY(25deg) rotateX(10deg) rotateZ(-15deg);
+            box-shadow: -40px 80px 80px -10px rgba(0, 0, 0, 0.7);
+            /* cursor: pointer; */
+            margin-right: 30px;
+            display: inline-block;
+            margin-left: 30%;
+        }
+
+        .perspective img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 800px;
+            transform: translateZ(16px);
+        }
+
+        .bottom,
+        .left {
+            position: absolute;
+            width: 100px;
+            height: 800px;
+            display: block;
+            transition: all 1s linear;
+            overflow: hidden;
+            border-radius: 2px;
+            transform: translateZ(16px);
+            filter: brightness(80%)
+        }
+
+        .left {
+            transform: rotateY(270deg) translateX(-0.5px);
+            transform-origin: center left;
+            width: 18px;
+        }
+
+        .bottom {
+            transform: rotateX(90deg) translateY(15px) translateZ(-480px);
+            transform-origin: bottom center;
+            height: 18px;
+        }
+
+        .bottom img {
+            /* transform: rotateX(180deg); */
+            width: 100%;
+            height: 800px;
+            left: 0px;
+        }
+
+        .store-button {
+            max-width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-background">
+    </div>
+    <div class="header-background-overlay">
+    </div>
+    <div class="body-background">
+    </div>
+    <div class="part-one">
+        <div class=" icon">
+            <img src="assets/images/icon-android.png" alt="Vegan LT Logo">
+            <div class="gloss"></div>
+        </div>
+        <div class="part-one-text">
+            <h1>Vegan LT</h1>
+            <p>Jūsų kompanjonas lengvam ir skaniam pasirinkimui!</p>
+            <p>Patogus ir greitas būdas patikrinti, ar produktai ir ingredientai yra veganiški ar vegetariški.</p>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.laz.veganlietuva"><img
+                    class="store-button" alt='Gauti iš Google Play' src="assets/images/google-play-badge.png" /></a>
+        </div>
+    </div>
+    <div class="part-two">
+        <img class="screenshot" src="assets/images/screenshot-android-1.png">
+        <img class="screenshot" src="assets/images/screenshot-android-2.png">
+    </div>
+</body>
+
+</html>
