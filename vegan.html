@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegan LT</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/vegan-lt-favicon.ico">
     <style>
         body {
             margin: 0px;
@@ -204,6 +205,13 @@
         .store-button {
             max-width: 25%;
             min-width: 150px;
+            margin-right: 16px;
+        }
+
+        .store-buttons-container {
+            display: flex;
+            max-width: 160px;
+            align-items: center;
         }
     </style>
 </head>
@@ -224,8 +232,18 @@
             <h1>Vegan LT</h1>
             <p>Jūsų kompanionas lengvam ir skaniam pasirinkimui!</p>
             <p>Patogus ir greitas būdas patikrinti, ar produktai ir ingredientai yra veganiški ar vegetariški.</p>
-            <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.laz.veganlietuva"><img
-                    class="store-button" alt='Gauti iš Google Play' src="assets/images/google-play-badge.png" /></a>
+            <div class="store-buttons-container">
+                <span class="store-button">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.laz.veganlietuva">
+                        <img class="store-button" alt='Gauti iš Google Play'
+                            src="assets/images/google-play-badge.png" /></a>
+                </span>
+                <span class="store-button">
+                    <a target="_blank" href="https://testflight.apple.com/join/0EbuWXqN">
+                        <img class="store-button" alt='Atsisiųskite iš App Store'
+                            src="assets/images/apple-app-store-badge.svg" /></a>
+                </span>
+            </div>
         </div>
     </div>
     <div class="part-two">
