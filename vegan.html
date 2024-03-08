@@ -18,13 +18,13 @@
             background-size: cover;
             background-position: -10%;
             width: 100%;
-            min-height: 37%;
+            min-height: 45%;
             z-index: -2;
         }
 
         .body-background {
             position: absolute;
-            top: 37%;
+            top: 45%;
             left: 0px;
             background-image: url("assets/images/triangle-pattern.jpg");
             opacity: .05;
@@ -42,7 +42,7 @@
             background-color: #0E4818;
             opacity: .5;
             width: 100%;
-            min-height: 37%;
+            min-height: 45%;
             z-index: -1;
         }
 
@@ -63,6 +63,7 @@
             font-family: Arial, Helvetica, sans-serif;
             display: table;
             margin-left: 10px;
+            padding-right: 10px;
         }
 
         .part-one-text h1 {
@@ -106,7 +107,6 @@
         .icon {
             margin: 8px;
             background: #33CC00;
-            background-image: url(http://www.cyberdesignz.com/blog/wp-content/uploads/2009/12/CSS.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
@@ -203,15 +203,16 @@
         }
 
         .store-button {
-            max-width: 25%;
+            max-width: 165px;
             min-width: 150px;
             margin-right: 16px;
         }
 
         .store-buttons-container {
             display: flex;
-            max-width: 160px;
             align-items: center;
+            justify-content: center;
+            width: 100%;
         }
     </style>
 </head>
@@ -232,19 +233,18 @@
             <h1>Vegan LT</h1>
             <p>Jūsų kompanionas lengvam ir skaniam pasirinkimui!</p>
             <p>Patogus ir greitas būdas patikrinti, ar produktai ir ingredientai yra veganiški ar vegetariški.</p>
-            <div class="store-buttons-container">
-                <span class="store-button">
-                    <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.laz.veganlietuva">
-                        <img class="store-button" alt='Gauti iš Google Play'
-                            src="assets/images/google-play-badge.png" /></a>
-                </span>
-                <span class="store-button">
-                    <a target="_blank" href="https://apps.apple.com/lt/app/vegan-lt/id6449387036">
-                        <img class="store-button" alt='Atsisiųskite iš App Store'
-                            src="assets/images/apple-app-store-badge.svg" /></a>
-                </span>
-            </div>
         </div>
+    </div>
+    <div class="store-buttons-container">
+        <span class="store-button">
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.laz.veganlietuva">
+                <img class="store-button" alt='Gauti iš Google Play' src="assets/images/google-play-badge.png" /></a>
+        </span>
+        <span class="store-button">
+            <a target="_blank" href="https://apps.apple.com/lt/app/vegan-lt/id6449387036">
+                <img class="store-button" alt='Atsisiųskite iš App Store'
+                    src="assets/images/apple-app-store-badge.svg" /></a>
+        </span>
     </div>
     <div class="part-two">
         <img class="screenshot" src="assets/images/screenshot-android-1.png">
